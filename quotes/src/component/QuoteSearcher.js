@@ -26,12 +26,13 @@ class QuoteSearcher extends Component {
             <div>
              {this.state.quotes.map(quotes => {
              return <div>
-                 <Quote />
-                    <p>{quotes.quoteText}</p>
-                    <p>By: {quotes.quoteAuthor}</p>
+                 <Quote 
+                    quoteText = {quotes.quoteText}
+                    quoteAuthor = {quotes.quoteAuthor}
+                    />
                 </div>
              })}
-                </div>
+             </div>
           );
         }
       }
