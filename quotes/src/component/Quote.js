@@ -5,7 +5,7 @@ class Quote extends Component {
         return (
         <div>
             <p>{this.props.quoteText}</p>
-            <p>{this.props.quoteAuthor}</p>
+            <p>By: {this.props.quoteAuthor}</p>
         </div>
             )}  
         }
